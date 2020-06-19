@@ -1,0 +1,5 @@
+##注意：Promise是ES6起开始支持的，这意味着如果你要在客户端使用，一定要考虑用户的兼容性问题，比如早期的IE是不支持这个方法的
+###用于将callback回调函数用Promise形式写出。事实上JS处理异步的解决方案从callback到promise到generatol再到async
+callback不说了，promise使得callback看起来更简洁，避免出现回调地狱这种不利于代码维护的情况。而generatol是借鉴了
+传统编程语言处理异步任务的解决方案，最后async/await是generatol的语法糖，看起来更简洁，没有封装痕迹。
+###这次顺便测试了一下前端渲染CSR模板引擎的情况，处理用户个人中心，甚至是首页的时候很适合CSR。前后端分离彻底，前端只管渲染页面，不用考虑数据接口。另外Promise是用来处理多个接口情况的前端异步请求，当然用callback也能处理
